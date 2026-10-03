@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <title>Organization Portal | VOLUNTEER+</title>
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html" aria-label="VOLUNTEER+ home"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="" href="../index.html">Home</a>
+      <a class="" href="events.html">Events</a>
+      <a class="" href="volunteer-dashboard.html">Volunteer Dashboard</a>
+      <a class="active" href="organization-portal.html">Org Portal</a>
+      <a class="" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Sign in</a>
+      <a class="btn btn-primary" href="register.html">Join as Volunteer</a>
+    </div>
+  </div>
+</header>
+
+<main class="portal-layout">
+<aside class="portal-sidebar">
+  <div class="sidebar-brand"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></div>
+  <a class="side-link active" href="organization-portal.html">▦ Overview</a><a class="side-link" href="#create-event">＋ Create Event</a><a class="side-link" href="#events">◫ My Events</a><a class="side-link" href="#volunteers">♙ Volunteers</a><a class="side-link" href="#attendance">⌗ Attendance</a><a class="side-link" href="#certificates">▤ Certificates</a>
+</aside>
+<section class="portal-main">
+  <div class="portal-head"><div><h1>Organization Portal</h1><p>Manage your events and volunteers.</p></div><div class="avatar" aria-label="Demo organization">GE</div></div>
+  <div class="demo-banner">Demo organization: Green Earth Foundation. This portal is frontend-only; event and volunteer data are sample records.</div>
+  <div class="kpi-grid"><div class="kpi"><strong>6</strong><span>Active Events</span></div><div class="kpi"><strong>128</strong><span>Registered Volunteers</span></div><div class="kpi"><strong>3</strong><span>Completed Events</span></div><div class="kpi"><strong>420</strong><span>Service Hours</span></div></div>
+  <div class="portal-content">
+    <div class="dash-card" id="create-event"><div class="toolbar-row"><h2>Create New Event</h2></div>
+      <form data-demo-form="create-event">
+        <div class="form-row"><div class="form-group"><label for="eventName">Event Name</label><input id="eventName" class="form-control" required placeholder="e.g. Tree Plantation Drive"></div><div class="form-group"><label for="eventCategory">Category</label><select id="eventCategory" class="form-control"><option>Environment</option><option>Education</option><option>Health</option><option>Disaster Relief</option><option>Animal Welfare</option><option>Community</option></select></div></div>
+        <div class="form-row"><div class="form-group"><label for="eventDate">Date</label><input id="eventDate" class="form-control" type="date"></div><div class="form-group"><label for="eventTime">Time</label><input id="eventTime" class="form-control" type="time"></div></div>
+        <div class="form-group"><label for="eventLocation">Location</label><input id="eventLocation" class="form-control" placeholder="City, Tamil Nadu"></div>
+        <div class="form-group"><label for="eventDescription">Description</label><textarea id="eventDescription" class="form-control" placeholder="Describe the volunteering activity"></textarea></div>
+        <div class="form-group"><label for="capacity">Volunteer Capacity</label><input id="capacity" class="form-control" type="number" min="1" placeholder="50"></div>
+        <button class="btn btn-primary" type="submit">Create Event</button>
+      </form>
+    </div>
+    <div class="dash-card" id="attendance"><div class="toolbar-row"><h2>QR Attendance</h2></div><p class="helper">Generate a local demo visual for event check-in. No external QR API is used.</p><button class="btn btn-primary btn-full" type="button" data-generate-qr>Generate QR</button><div id="generatedQr" class="qr-demo hidden"><img src="../assets/images/qr-demo.svg" alt="Generated demo QR"><strong style="color:#123654">TREE-20AUG-DEMO</strong></div></div>
+  </div>
+  <div class="dash-card" id="volunteers" style="margin-top:18px"><div class="toolbar-row"><h2>Recent Volunteers</h2><span class="helper">Sample data</span></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Name</th><th>Email</th><th>Event</th><th>Status</th><th>Attendance</th><th>Hours</th></tr></thead><tbody>
+    <tr><td>Arun Kumar</td><td>arun@example.com</td><td>Tree Plantation</td><td><span class="status">Registered</span></td><td>Present</td><td>4</td></tr>
+    <tr><td>Priya S</td><td>priya@example.com</td><td>Blood Donation</td><td><span class="status">Registered</span></td><td>Present</td><td>4</td></tr>
+    <tr><td>Karthik R</td><td>karthik@example.com</td><td>Learning Support</td><td><span class="status">Registered</span></td><td>Pending</td><td>—</td></tr>
+    <tr><td>Meena P</td><td>meena@example.com</td><td>Clean-up Drive</td><td><span class="status">Registered</span></td><td>Present</td><td>3</td></tr>
+  </tbody></table></div></div>
+</section>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

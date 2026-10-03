@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 44" role="img" aria-label="VOLUNTEER+">
+  <g fill="none" stroke="#14945f" stroke-width="2.4" stroke-linecap="round">
+    <path d="M16 29c-5-3-7-9-5-14 6 0 11 4 12 10"/>
+    <path d="M24 34c-1-7 1-13 7-17 4 5 3 11-2 15"/>
+    <path d="M21 34c-4-5-4-11 0-16 5 2 7 7 5 12"/>
+  </g>
+  <path d="M21 35c0-7 2-13 8-18" stroke="#0b6f48" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="43" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#122d50">VOLUNTEER<tspan fill="#14945f">+</tspan></text>
+</svg>

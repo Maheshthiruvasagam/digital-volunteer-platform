@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <title>Admin Dashboard | VOLUNTEER+</title>
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html" aria-label="VOLUNTEER+ home"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="" href="../index.html">Home</a>
+      <a class="" href="events.html">Events</a>
+      <a class="" href="volunteer-dashboard.html">Volunteer Dashboard</a>
+      <a class="" href="organization-portal.html">Org Portal</a>
+      <a class="active" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Sign in</a>
+      <a class="btn btn-primary" href="register.html">Join as Volunteer</a>
+    </div>
+  </div>
+</header>
+
+<main class="portal-layout">
+<aside class="portal-sidebar">
+  <div class="sidebar-brand"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></div>
+  <a class="side-link active" href="admin.html">▦ Dashboard</a><a class="side-link" href="#volunteers">♙ Volunteers</a><a class="side-link" href="#organizations">▱ Organizations</a><a class="side-link" href="#events">◫ Events</a><a class="side-link" href="#certificates">▤ Certificates</a><a class="side-link" href="#reports">▥ Reports</a><a class="side-link" href="#profile">◯ Profile</a>
+</aside>
+<section class="portal-main">
+  <div class="portal-head"><div><h1>Admin Dashboard</h1><p>Monitor and manage the platform.</p></div><div class="avatar" aria-label="Demo admin">A</div></div>
+  <div class="demo-banner">Demo admin area. No real admin authentication or server-side permissions are implemented.</div>
+  <div class="kpi-grid"><div class="kpi"><strong>1,248</strong><span>Total Volunteers</span></div><div class="kpi"><strong>42</strong><span>Organizations</span></div><div class="kpi"><strong>86</strong><span>Events</span></div><div class="kpi"><strong>3,750</strong><span>Service Hours</span></div></div>
+  <div class="dash-card" id="volunteers" style="margin-top:18px"><div class="toolbar-row"><h2>Recent Volunteers</h2><div class="search-wrap" style="max-width:280px"><span class="search-icon">⌕</span><input id="adminSearch" type="search" placeholder="Search records..." aria-label="Search admin records"></div></div>
+    <div class="table-wrap"><table class="data-table" id="adminTable"><thead><tr><th>Name</th><th>Email</th><th>Join Date</th><th>Status</th></tr></thead><tbody>
+      <tr><td>Karthik R</td><td>karthik@example.com</td><td>20 Aug 2026</td><td><span class="status">Active</span></td></tr><tr><td>Priya S</td><td>priya@example.com</td><td>19 Aug 2026</td><td><span class="status">Active</span></td></tr><tr><td>Arun Kumar</td><td>arun@example.com</td><td>18 Aug 2026</td><td><span class="status">Active</span></td></tr><tr><td>Meena P</td><td>meena@example.com</td><td>16 Aug 2026</td><td><span class="status" style="background:#fff4df;color:#96641b">Pending</span></td></tr>
+    </tbody></table></div>
+  </div>
+  <div class="admin-grid">
+    <div class="dash-card" id="organizations"><div class="toolbar-row"><h2>Recent Organizations</h2><span class="helper">View All</span></div><div class="event-mini"><div class="info-icon" style="margin:0">GE</div><div><strong>Green Earth Foundation</strong><span>Perambalur • 6 active events</span></div><span class="status">Active</span></div><div class="event-mini"><div class="info-icon" style="margin:0">CE</div><div><strong>CarePlus Community Trust</strong><span>Chennai • 4 active events</span></div><span class="status">Active</span></div></div>
+    <div class="dash-card" id="events"><div class="toolbar-row"><h2>Recent Events</h2><span class="helper">View All</span></div><div class="event-mini"><img src="../assets/images/tree-plantation.svg" alt=""><div><strong>Tree Plantation Drive</strong><span>20 Aug 2026 • Perambalur</span></div><span class="status">Active</span></div><div class="event-mini"><img src="../assets/images/blood-donation.svg" alt=""><div><strong>Blood Donation Camp</strong><span>25 Aug 2026 • Chennai</span></div><span class="status">Active</span></div><div class="event-mini"><img src="../assets/images/cleanup.svg" alt=""><div><strong>Community Clean-up</strong><span>5 Sep 2026 • Trichy</span></div><span class="status" style="background:#fff4df;color:#96641b">Pending</span></div></div>
+  </div>
+</section>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

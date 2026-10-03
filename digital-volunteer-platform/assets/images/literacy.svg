@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+ <rect width="640" height="420" rx="26" fill="#f0f5ff"/>
+ <rect x="105" y="105" width="430" height="225" rx="16" fill="#fff" stroke="#d5e2f5" stroke-width="4"/>
+ <path d="M145 155h350M145 205h240M145 255h300" stroke="#8aa6c5" stroke-width="13" stroke-linecap="round"/>
+ <g stroke="#193b5b" stroke-width="4"><circle cx="455" cy="350" r="25" fill="#a56a4c"/><path d="M430 345q25-35 50 0" fill="#202a32"/><path d="M430 375q25-13 50 0l18 45h-86z" fill="#62ad78"/></g>
+ <text x="320" y="65" text-anchor="middle" font-family="Arial" font-size="25" font-weight="800" fill="#123454">Rural Digital Literacy</text>
+</svg>

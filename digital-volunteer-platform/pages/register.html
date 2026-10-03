@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <title>Join as Volunteer | VOLUNTEER+</title>
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html" aria-label="VOLUNTEER+ home"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="" href="../index.html">Home</a>
+      <a class="" href="events.html">Events</a>
+      <a class="" href="volunteer-dashboard.html">Volunteer Dashboard</a>
+      <a class="" href="organization-portal.html">Org Portal</a>
+      <a class="" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Sign in</a>
+      <a class="btn btn-primary" href="register.html">Join as Volunteer</a>
+    </div>
+  </div>
+</header>
+
+<main class="auth-page"><div class="container">
+<div class="auth-shell">
+  <div class="auth-art"><span class="eyebrow">JOIN THE COMMUNITY</span><h2>Create Volunteer Account</h2><p>Set up a sample volunteer profile for this frontend prototype.</p><img src="../assets/images/education.svg" alt="Community education support illustration"></div>
+  <div class="auth-form"><div class="auth-logo"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></div><h1>Create Volunteer Account</h1><p>Demo form only. Information stays in the browser form and is not sent anywhere.</p>
+    <form data-demo-form="register">
+      <div class="form-group"><label for="fullName">Full Name</label><input id="fullName" class="form-control" type="text" placeholder="Enter your full name"></div>
+      <div class="form-group"><label for="regEmail">Email Address</label><input id="regEmail" class="form-control" type="email" placeholder="Enter your email" autocomplete="off"></div>
+      <div class="form-group"><label for="mobile">Mobile Number</label><input id="mobile" class="form-control" type="tel" placeholder="Enter your mobile number" autocomplete="off"></div>
+      <div class="form-row"><div class="form-group"><label for="city">City</label><input id="city" class="form-control" type="text" placeholder="Enter your city"></div><div class="form-group"><label for="state">State</label><select id="state" class="form-control"><option value="">Select state</option><option>Tamil Nadu</option><option>Kerala</option><option>Karnataka</option><option>Andhra Pradesh</option></select></div></div>
+      <div class="form-group"><label for="age">Age</label><input id="age" class="form-control" type="number" min="1" max="100" placeholder="Enter your age"></div>
+      <div class="form-group"><label>Area of Interest</label><div class="check-grid">
+        <label class="check-item"><input type="checkbox"> Environment</label><label class="check-item"><input type="checkbox"> Education</label><label class="check-item"><input type="checkbox"> Health</label><label class="check-item"><input type="checkbox"> Disaster Relief</label><label class="check-item"><input type="checkbox"> Animal Welfare</label><label class="check-item"><input type="checkbox"> Community Service</label>
+      </div></div>
+      <button class="btn btn-primary btn-full" type="submit">Create Volunteer Account</button>
+    </form>
+    <div class="auth-footer">Already have a demo account? <a href="login.html">Sign in</a></div>
+  </div>
+</div>
+</div></main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

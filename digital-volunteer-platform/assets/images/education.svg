@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+ <rect width="640" height="420" rx="26" fill="#eef5ff"/>
+ <rect x="90" y="85" width="460" height="260" rx="18" fill="#fff" stroke="#d8e5f5" stroke-width="4"/>
+ <rect x="130" y="125" width="380" height="120" rx="10" fill="#dcecff"/>
+ <path d="M170 205l70-55 70 55M350 205l70-55 70 55" fill="none" stroke="#4a82ba" stroke-width="7"/>
+ <g stroke="#193b5b" stroke-width="4"><circle cx="240" cy="305" r="24" fill="#9c684c"/><path d="M215 300q25-35 50 0" fill="#202a32"/><path d="M215 330q25-13 50 0l18 55h-86z" fill="#4b8fd1"/><circle cx="410" cy="305" r="24" fill="#a86d50"/><path d="M385 300q25-35 50 0" fill="#202a32"/><path d="M385 330q25-13 50 0l18 55h-86z" fill="#66b879"/></g>
+ <text x="320" y="55" text-anchor="middle" font-family="Arial" font-size="25" font-weight="800" fill="#123454">Learning Support</text>
+</svg>

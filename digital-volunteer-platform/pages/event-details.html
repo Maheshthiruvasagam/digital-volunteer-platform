@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <title>Event Details | VOLUNTEER+</title>
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html" aria-label="VOLUNTEER+ home"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="" href="../index.html">Home</a>
+      <a class="active" href="events.html">Events</a>
+      <a class="" href="volunteer-dashboard.html">Volunteer Dashboard</a>
+      <a class="" href="organization-portal.html">Org Portal</a>
+      <a class="" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Sign in</a>
+      <a class="btn btn-primary" href="register.html">Join as Volunteer</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section" style="padding-top:35px"><div class="container">
+<a href="events.html" class="helper">← Back to Events</a>
+<div class="details-layout" style="margin-top:16px">
+  <div>
+    <div class="details-image"><img id="detailImage" src="../assets/images/tree-plantation.svg" alt="Tree Plantation Drive"></div>
+    <div class="content-card"><h2>About This Event</h2><p id="detailDescription" class="helper" style="font-size:13px">Join us for a tree plantation drive to create a greener and healthier environment. We will plant native tree species in the Perambalur region and promote environmental awareness in the community.</p></div>
+    <div class="two-col">
+      <div class="content-card"><h2>What You Will Do</h2><ul><li>Plant saplings</li><li>Support site preparation</li><li>Create awareness among local residents</li><li>Work with local volunteers and NGOs</li></ul></div>
+      <div class="content-card"><h2>Requirements</h2><ul><li>Interest in environmental activities</li><li>Willingness to do outdoor work</li><li>Basic physical fitness</li></ul></div>
+    </div>
+  </div>
+  <aside class="detail-card">
+    <span class="badge">Environment</span><h1 id="detailTitle" class="details-main">Tree Plantation Drive</h1><div class="org" id="detailOrg">by Green Earth Foundation</div>
+    <div class="detail-list"><div class="detail-row">⌖ <strong id="detailLocation">Perambalur, Tamil Nadu</strong></div><div class="detail-row">◷ <strong id="detailDate">20 Aug 2026</strong> • <strong id="detailTime">9:00 AM – 1:00 PM</strong></div><div class="detail-row">♙ <strong id="detailSlots">50 volunteer slots</strong></div></div>
+    <button class="btn btn-primary" type="button" data-register-event>Register for this Event</button>
+    <div class="content-card" style="margin-top:16px;background:#f7faf8"><h2 style="font-size:14px">Things to Bring</h2><ul><li>Water bottle</li><li>Cap / Hat</li><li>Comfortable clothes</li><li>Enthusiasm!</li></ul></div>
+    <div class="content-card" style="margin-top:12px;background:#f7faf8"><h2 style="font-size:14px">Contact</h2><p class="helper">hello@volunteerplus.in</p></div>
+  </aside>
+</div></div></section>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

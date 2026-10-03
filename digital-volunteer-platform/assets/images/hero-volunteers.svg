@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 560">
+ <rect width="820" height="560" rx="32" fill="#eef9f1"/>
+ <circle cx="650" cy="110" r="90" fill="#d7f1dc"/>
+ <path d="M0 430 Q170 360 340 435 T820 410 V560 H0Z" fill="#d9f3df"/>
+ <rect x="45" y="54" width="170" height="34" rx="17" fill="#ffffff" opacity=".9"/>
+ <text x="130" y="76" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#17764d">COMMUNITY DAY</text>
+ <!-- trees -->
+ <path d="M690 300v120" stroke="#6b4d32" stroke-width="18"/>
+ <circle cx="690" cy="265" r="65" fill="#63b87d"/><circle cx="650" cy="285" r="44" fill="#4cae70"/><circle cx="735" cy="285" r="46" fill="#73c889"/>
+ <path d="M105 355v100" stroke="#6b4d32" stroke-width="14"/>
+ <circle cx="105" cy="320" r="55" fill="#6abf80"/><circle cx="75" cy="338" r="35" fill="#54ae70"/><circle cx="137" cy="340" r="37" fill="#7bcf8f"/>
+ <!-- people -->
+ <g stroke="#163a5d" stroke-width="5">
+  <circle cx="280" cy="225" r="30" fill="#b77b55"/><path d="M248 218q30-42 64 0" fill="#1d2c3b"/>
+  <path d="M250 260q30-18 60 0l24 90h-98z" fill="#f3a65c"/>
+  <path d="M270 350l-25 92M293 350l27 92" fill="none"/>
+  <path d="M245 442h-22M320 442h22" fill="none"/>
+ </g>
+ <g stroke="#163a5d" stroke-width="5">
+  <circle cx="420" cy="205" r="32" fill="#a96d4c"/><path d="M387 198q31-43 67 0" fill="#252b32"/>
+  <path d="M387 242q33-19 67 0l26 108h-118z" fill="#4b8fd1"/>
+  <path d="M412 350l-28 92M437 350l28 92" fill="none"/>
+  <path d="M383 442h-22M465 442h22" fill="none"/>
+ </g>
+ <g stroke="#163a5d" stroke-width="5">
+  <circle cx="555" cy="245" r="29" fill="#8d5b40"/><path d="M525 238q30-38 61 0" fill="#18222b"/>
+  <path d="M527 277q28-18 57 0l24 78h-104z" fill="#5cae72"/>
+  <path d="M547 355l-22 80M568 355l24 80" fill="none"/>
+  <path d="M525 435h-20M592 435h20" fill="none"/>
+ </g>
+ <!-- sapling -->
+ <path d="M375 400v-75" stroke="#6b4d32" stroke-width="10"/>
+ <path d="M375 345q-35-30-55-3 24 35 55 18M375 325q34-35 54-8-23 39-54 26" fill="#2e9d61"/>
+ <text x="410" y="500" text-anchor="middle" font-family="Arial" font-size="20" font-weight="800" fill="#123454">Local volunteers • Tamil Nadu</text>
+</svg>

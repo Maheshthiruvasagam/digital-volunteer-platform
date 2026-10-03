@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <title>Volunteer Dashboard | VOLUNTEER+</title>
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html" aria-label="VOLUNTEER+ home"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="" href="../index.html">Home</a>
+      <a class="" href="events.html">Events</a>
+      <a class="active" href="volunteer-dashboard.html">Volunteer Dashboard</a>
+      <a class="" href="organization-portal.html">Org Portal</a>
+      <a class="" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Sign in</a>
+      <a class="btn btn-primary" href="register.html">Join as Volunteer</a>
+    </div>
+  </div>
+</header>
+
+<main class="dashboard-layout">
+<aside class="sidebar">
+  <div class="sidebar-brand"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></div>
+  <a class="side-link active" href="volunteer-dashboard.html">▦ Dashboard</a><a class="side-link" href="events.html">◫ My Events</a><a class="side-link" href="events.html">⌕ Discover Events</a><a class="side-link" href="#attendance">⌗ Attendance</a><a class="side-link" href="#hours">◔ Service Hours</a><a class="side-link" href="#certificates">▤ Certificates</a><a class="side-link" href="#profile">◯ Profile</a>
+  <div class="side-spacer"></div><a class="side-link" href="login.html">↪ Logout</a>
+</aside>
+<section class="dash-main">
+  <div class="dash-top"><div><h1>Welcome back, Karthik 👋</h1><p>Keep making a positive impact.</p></div><div class="avatar" aria-label="Demo profile">K</div></div>
+  <div class="dash-stats"><div class="dash-stat"><strong>8</strong><span>Registered Events</span></div><div class="dash-stat"><strong>5</strong><span>Completed Events</span></div><div class="dash-stat"><strong>32</strong><span>Service Hours</span></div><div class="dash-stat"><strong>3</strong><span>Certificates</span></div></div>
+  <div class="dash-grid">
+    <div class="dash-card"><div class="toolbar-row"><h2>Upcoming Events</h2><a class="helper" href="events.html">View All</a></div>
+      <div class="event-mini"><img src="../assets/images/tree-plantation.svg" alt=""><div><strong>Tree Plantation Drive</strong><span>Perambalur, Tamil Nadu • 20 Aug 2026</span></div><span class="status">Registered</span></div>
+      <div class="event-mini"><img src="../assets/images/blood-donation.svg" alt=""><div><strong>Community Blood Donation Camp</strong><span>Chennai, Tamil Nadu • 25 Aug 2026</span></div><span class="status">Registered</span></div>
+      <div class="event-mini"><img src="../assets/images/education.svg" alt=""><div><strong>Learning Support</strong><span>Ariyalur, Tamil Nadu • 24 Aug 2026</span></div><span class="status">Registered</span></div>
+    </div>
+    <div class="dash-card" id="attendance"><h2>Scan Event QR</h2><div class="qr-demo"><img src="../assets/images/qr-demo.svg" alt="Demo QR code"><p class="helper" style="text-align:center">Show this at the event for attendance<br><strong>No camera access in demo mode.</strong></p><button class="btn btn-primary btn-full" type="button" data-qr-demo>Open QR Scanner</button></div></div>
+  </div>
+  <div class="dash-grid">
+    <div class="dash-card" id="hours"><h2>Service Hours Progress</h2><div class="progress-ring"><div><strong>32</strong><span>Hours</span></div></div><p class="helper" style="text-align:center">Goal: 50 hours • 64%</p></div>
+    <div class="dash-card" id="certificates"><div class="toolbar-row"><h2>Recent Certificates</h2><span class="helper">View All</span></div><div class="event-mini"><div class="info-icon" style="margin:0;width:38px;height:38px">▤</div><div><strong>Tree Plantation Drive</strong><span>Green Earth Foundation • 20 Aug 2025</span></div></div><button class="btn btn-outline btn-full" type="button" data-modal-open="certificateModal">View Certificate</button></div>
+  </div>
+</section>
+</main>
+<div id="qrModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="qrTitle"><div class="modal"><button class="modal-close" type="button" aria-label="Close" data-modal-close="qrModal">×</button><h2 id="qrTitle">QR scanner demo</h2><p>This prototype does not access your camera or request device permissions. The QR attendance flow is simulated on the frontend.</p><div class="qr-demo"><img src="../assets/images/qr-demo.svg" alt="Demo QR"></div><button class="btn btn-primary btn-full" type="button" data-modal-close="qrModal">Close Demo</button></div></div>
+<div id="certificateModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="certificateTitle"><div class="modal"><button class="modal-close" type="button" aria-label="Close" data-modal-close="certificateModal">×</button><h2 id="certificateTitle">Digital certificate</h2><p>This is a visual placeholder for a future certificate module. No certificate file is generated or downloaded.</p><div style="border:2px solid #b8d8c5;padding:24px;text-align:center;border-radius:14px;background:#f5fbf7"><strong style="color:#123654;font-size:20px">VOLUNTEER+</strong><p style="margin:10px 0 0;color:#557">Certificate of Participation</p><strong>Tree Plantation Drive</strong></div></div></div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

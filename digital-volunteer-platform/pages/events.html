@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <title>Find Volunteer Events | VOLUNTEER+</title>
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html" aria-label="VOLUNTEER+ home"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="" href="../index.html">Home</a>
+      <a class="active" href="events.html">Events</a>
+      <a class="" href="volunteer-dashboard.html">Volunteer Dashboard</a>
+      <a class="" href="organization-portal.html">Org Portal</a>
+      <a class="" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Sign in</a>
+      <a class="btn btn-primary" href="register.html">Join as Volunteer</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero"><div class="container"><div class="section-kicker">Volunteer opportunities</div><h1>Find opportunities to volunteer.</h1><p>Join meaningful events and create a positive impact in your community.</p></div></section>
+<section class="section"><div class="container">
+  <div class="events-toolbar"><div class="search-wrap"><span class="search-icon">⌕</span><input id="eventSearch" type="search" placeholder="Search events..." aria-label="Search events"></div>
+  <div class="filters" aria-label="Event categories">
+    <button class="filter-btn active" type="button" data-filter="All">All</button>
+    <button class="filter-btn" type="button" data-filter="Environment">Environment</button><button class="filter-btn" type="button" data-filter="Education">Education</button><button class="filter-btn" type="button" data-filter="Health">Health</button><button class="filter-btn" type="button" data-filter="Disaster Relief">Disaster Relief</button><button class="filter-btn" type="button" data-filter="Animal Welfare">Animal Welfare</button><button class="filter-btn" type="button" data-filter="Community">Community</button>
+  </div></div>
+  <div class="event-grid" id="eventGrid">
+<article class="event-card" data-category="Environment" data-event-id="tree">
+  <img src="../assets/images/tree-plantation.svg" alt="Tree Plantation Drive illustration">
+  <div class="event-body"><span class="badge">Environment</span>
+  <h2 class="event-title">Tree Plantation Drive</h2>
+  <div class="event-meta">⌖ Perambalur, Tamil Nadu</div><div class="event-meta">◷ 20 Aug 2026 • 9:00 AM – 1:00 PM</div><div class="event-meta">● 50 slots available</div>
+  <p class="event-desc">Plant trees and help create a greener, healthier community.</p><button class="btn btn-primary" type="button" data-event-link="tree">Register Now</button></div>
+</article>
+
+<article class="event-card" data-category="Health" data-event-id="blood">
+  <img src="../assets/images/blood-donation.svg" alt="Community Blood Donation Camp illustration">
+  <div class="event-body"><span class="badge">Health</span>
+  <h2 class="event-title">Community Blood Donation Camp</h2>
+  <div class="event-meta">⌖ Chennai, Tamil Nadu</div><div class="event-meta">◷ 25 Aug 2026 • 10:00 AM – 2:00 PM</div><div class="event-meta">● 30 slots available</div>
+  <p class="event-desc">Support lifesaving blood donation and community health awareness.</p><button class="btn btn-primary" type="button" data-event-link="blood">Register Now</button></div>
+</article>
+
+<article class="event-card" data-category="Education" data-event-id="education">
+  <img src="../assets/images/education.svg" alt="Government School Learning Support illustration">
+  <div class="event-body"><span class="badge">Education</span>
+  <h2 class="event-title">Government School Learning Support</h2>
+  <div class="event-meta">⌖ Ariyalur, Tamil Nadu</div><div class="event-meta">◷ 24 Aug 2026 • 9:00 AM – 12:00 PM</div><div class="event-meta">● 40 slots available</div>
+  <p class="event-desc">Help students with academic support and activities.</p><button class="btn btn-primary" type="button" data-event-link="education">Register Now</button></div>
+</article>
+
+<article class="event-card" data-category="Community" data-event-id="community">
+  <img src="../assets/images/cleanup.svg" alt="Community Clean-up Drive illustration">
+  <div class="event-body"><span class="badge">Community</span>
+  <h2 class="event-title">Community Clean-up Drive</h2>
+  <div class="event-meta">⌖ Trichy, Tamil Nadu</div><div class="event-meta">◷ 5 Sep 2026 • 8:00 AM – 11:00 AM</div><div class="event-meta">● 60 slots available</div>
+  <p class="event-desc">Clean public spaces and create a healthier environment.</p><button class="btn btn-primary" type="button" data-event-link="community">Register Now</button></div>
+</article>
+
+<article class="event-card" data-category="Animal Welfare" data-event-id="animal">
+  <img src="../assets/images/animal-rescue.svg" alt="Animal Rescue Support illustration">
+  <div class="event-body"><span class="badge">Animal Welfare</span>
+  <h2 class="event-title">Animal Rescue Support</h2>
+  <div class="event-meta">⌖ Coimbatore, Tamil Nadu</div><div class="event-meta">◷ 10 Sep 2026 • 9:00 AM – 1:00 PM</div><div class="event-meta">● 25 slots available</div>
+  <p class="event-desc">Support animal rescue and welfare activities.</p><button class="btn btn-primary" type="button" data-event-link="animal">Register Now</button></div>
+</article>
+
+<article class="event-card" data-category="Education" data-event-id="education">
+  <img src="../assets/images/literacy.svg" alt="Rural Digital Literacy Camp illustration">
+  <div class="event-body"><span class="badge">Education</span>
+  <h2 class="event-title">Rural Digital Literacy Camp</h2>
+  <div class="event-meta">⌖ Madurai, Tamil Nadu</div><div class="event-meta">◷ 15 Sep 2026 • 9:00 AM – 1:00 PM</div><div class="event-meta">● 35 slots available</div>
+  <p class="event-desc">Help rural communities learn practical digital skills.</p><button class="btn btn-primary" type="button" data-event-link="education">Register Now</button></div>
+</article><div id="emptyEvents" class="empty-state hidden">No matching events found. Try another search or category.</div></div>
+</div></section>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

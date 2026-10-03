@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+ <rect width="640" height="420" rx="26" fill="#fff7e9"/>
+ <circle cx="320" cy="235" r="105" fill="#dca56e"/>
+ <circle cx="270" cy="180" r="35" fill="#c78955"/><circle cx="370" cy="180" r="35" fill="#c78955"/>
+ <circle cx="285" cy="225" r="10" fill="#193b5b"/><circle cx="355" cy="225" r="10" fill="#193b5b"/>
+ <ellipse cx="320" cy="265" rx="24" ry="17" fill="#5d3d31"/>
+ <path d="M320 270q-20 35-42 0M320 270q20 35 42 0" fill="none" stroke="#5d3d31" stroke-width="6"/>
+ <path d="M155 335q55-45 110 0M375 335q55-45 110 0" fill="none" stroke="#5c9d69" stroke-width="18" stroke-linecap="round"/>
+ <text x="320" y="62" text-anchor="middle" font-family="Arial" font-size="25" font-weight="800" fill="#123454">Animal Rescue Support</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+ <rect width="640" height="420" rx="26" fill="#fff1ee"/>
+ <rect x="90" y="110" width="460" height="230" rx="24" fill="#fff" stroke="#f3d4ce" stroke-width="4"/>
+ <path d="M320 145c-55 68-72 96-72 126a72 72 0 00144 0c0-30-18-58-72-126z" fill="#e85d61"/>
+ <circle cx="320" cy="270" r="26" fill="#fff" opacity=".85"/>
+ <g stroke="#193b5b" stroke-width="4"><circle cx="145" cy="205" r="25" fill="#9b674a"/><path d="M120 202q25-35 50 0" fill="#202a32"/><path d="M120 232q25-13 50 0l18 70h-86z" fill="#3f88c8"/></g>
+ <text x="320" y="74" text-anchor="middle" font-family="Arial" font-size="25" font-weight="800" fill="#123454">Community Blood Camp</text>
+</svg>

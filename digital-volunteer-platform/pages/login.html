@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <title>Sign In | VOLUNTEER+</title>
+  <link rel="icon" href="../assets/icons/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html" aria-label="VOLUNTEER+ home"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="" href="../index.html">Home</a>
+      <a class="" href="events.html">Events</a>
+      <a class="" href="volunteer-dashboard.html">Volunteer Dashboard</a>
+      <a class="" href="organization-portal.html">Org Portal</a>
+      <a class="" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Sign in</a>
+      <a class="btn btn-primary" href="register.html">Join as Volunteer</a>
+    </div>
+  </div>
+</header>
+
+<main class="auth-page"><div class="container">
+<div class="auth-shell">
+  <div class="auth-art"><span class="eyebrow">DEMO ACCESS</span><h2>Welcome Back</h2><p>Sign in to continue to the VOLUNTEER+ prototype.</p><img src="../assets/images/hero-volunteers.svg" alt="Community volunteering illustration"></div>
+  <div class="auth-form"><div class="auth-logo"><img src="../assets/icons/logo.svg" alt="VOLUNTEER+"></div><h1>Sign in</h1><p>Choose a demo role and continue. No credentials are transmitted or stored.</p>
+    <div class="role-tabs"><button class="role-tab active" type="button" data-role="volunteer">Volunteer</button><button class="role-tab" type="button" data-role="organization">Organization</button><button class="role-tab" type="button" data-role="admin">Admin</button></div>
+    <form data-demo-form="login">
+      <input type="radio" name="role" value="volunteer" checked hidden><input type="radio" name="role" value="organization" hidden><input type="radio" name="role" value="admin" hidden>
+      <div class="form-group"><label for="email">Email address</label><input id="email" class="form-control" type="email" placeholder="Enter your email" autocomplete="off"></div>
+      <div class="form-group"><label for="password">Password</label><input id="password" class="form-control" type="password" placeholder="Enter your password" autocomplete="off"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin:8px 0 17px"><label class="check-item"><input type="checkbox"> Remember me</label><span class="helper">Demo only</span></div>
+      <button class="btn btn-primary btn-full" type="submit">Sign In</button>
+    </form>
+    <div class="auth-footer">Don't have an account? <a href="register.html">Join as a volunteer</a></div>
+  </div>
+</div>
+</div></main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="../js/app.js" defer></script>
+</body>
+</html>
